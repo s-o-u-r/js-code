@@ -10,7 +10,7 @@ const outTemp = null
 let userEmail;
 const id = Symbol('123')
 const anotherId= Symbol('123')
-console.log(id == anotherId)
+// console.log(id == anotherId)
 
 const bigNumber= 3436758235n
 
@@ -28,3 +28,19 @@ let myObj={
 let myfunc=function(){
     console.log("hello world");
 }
+
+
+
+// memory
+
+// Stack(Primitive), Heap(Non-Primitive)
+
+let userOne= {
+    email:"sourishghosh@gmail.com",
+    upi:"ybl@231"
+}
+
+let userTwo= userOne
+
+userTwo.email="iamvengeance@gmail.com"
+console.log(userOne)
